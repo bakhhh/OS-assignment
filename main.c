@@ -5,8 +5,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include "linkedlist.h"
 
 pthread_t thread1;
+
 
 void r_log(int customerNo, char serviceType, int hour, int min, int sec){
 
@@ -18,6 +20,7 @@ void r_log(int customerNo, char serviceType, int hour, int min, int sec){
     fclose(logFp);
 
 }
+
 
 void getTime(int *hour, int *min, int * sec) //https://stackoverflow.com/questions/5141960/get-the-current-time-in-c a cheeky little help from stack overflow
 {
@@ -32,51 +35,46 @@ void getTime(int *hour, int *min, int * sec) //https://stackoverflow.com/questio
 
 }
 
-void enqueue(int tc,int queueSize) {
-    FILE *fpFile = fopen("c_file", "r");
-    FILE *fpQueue = fopen("c_queue", "w");
-    char line[20];
-    int customerNo;
-    char serviceType;
-    int hour,min,sec;
-
-    
-    for (int i =0; i<queueSize;i++){
-        sleep(tc);
-        fgets(line, queueSize, fpFile);
-        fputs(line, fpQueue);
-        sscanf(line, "%d %c", &customerNo, &serviceType);
-        getTime(&hour,&min,&sec);
-        r_log(customerNo,serviceType,hour,min,sec);
-    
-    }
-
-    fclose(fpQueue);
-    fclose(fpFile);
-  
-}
-
 typedef struct customerArgs{
-    int *tc;
+    int tc;
     int size;
 }args;
 
-void * customer(void* arg){
-    args * data = arg;
-    enqueue(*data->tc,data->size);
+typedef struct customerInfo{
+    int customerNo;
+    char service;
 
+}customerInfo;
+
+void * customer(void *arg){
+    linkedlist * queue = createLinkedList();
+    args *data = arg;
+    int hour,min,sec;
+    FILE *fpFile = fopen("c_file", "r");
+    for (int i =0; i<data->size;i++){
+        customerInfo *customers = (customerInfo*)(malloc(sizeof(customerInfo)));
+        sleep(data->tc);
+        fscanf(fpFile, "%d %c\n", &customers->customerNo, &customers->service);
+        insertLast(queue,customers);
+        getTime(&hour,&min,&sec);
+        r_log(customers->customerNo,customers->service,hour,min,sec);
+    }
+    fclose(fpFile);
     return NULL;
 }
 
-
-
+void printData(void *data){
+    printf("(%d, %c)->", ((customerInfo*)data)->customerNo,((customerInfo*)data)->service);
+}
 
 int main(int argc, char *argv[]){
+    // customer(1,5);
+    // printList(queue,&printData);
     int tc =1;
     int queueSize = 5;
-    args data = {&tc,queueSize};
+    args data = {tc,queueSize};
 
-    pthread_create(&thread1,NULL,customer,&data);
+    pthread_create(&thread1,NULL,(void*)customer,(void*)&data);
     pthread_join(thread1,NULL);
 
 
