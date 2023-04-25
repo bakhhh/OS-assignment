@@ -8,7 +8,7 @@ linkedlist * createLinkedList(){
     linkedlist * list;
     list = (linkedlist*)malloc(sizeof(linkedlist));
     list->head = NULL;
-    list->size = 0;
+    list->count = 0;
     return list;
 }
 
@@ -17,7 +17,7 @@ void insertLast(linkedlist *list, void * value){
     node * currNode = list->head;
     newNode->value = value;
     newNode->next = NULL;
-    if (list->size == 0) {
+    if (list->count == 0) {
         list->head = newNode;
     }
     else{
@@ -26,13 +26,28 @@ void insertLast(linkedlist *list, void * value){
         }
         currNode->next = newNode;
     }
-    list->size++;
+    list->count++;
 }
-void deleteFirst(linkedlist *list)
+void* deleteFirst(linkedlist *list)
 {
-    node * temp = list->head;
-    list->head = list->head->next;
+    void *data = NULL;
+    node *temp = list->head;
+    if (list->count ==0){
+        printf("empty\n");
+    }
+    else if(temp->next ==NULL){
+        data = temp->value;
+        list->head = NULL;
+
+    }
+    else{
+        data = temp->value;
+        list->head = list->head->next;
+    }
+    list->count--;
     free(temp);
+    return data;
+
 }
 
 

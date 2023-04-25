@@ -1,14 +1,17 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
-#include <semaphore.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
 #include "linkedlist.h"
 
-pthread_t thread1;
-
+pthread_t customerthread;
+pthread_t teller1;
+pthread_t teller2;
+pthread_t teller3;
+pthread_t teller4;
+pthread_mutex_t tellerMutex;
+pthread_cond_t tellerCond;
 
 void r_log(int customerNo, char serviceType, int hour, int min, int sec){
 
@@ -36,9 +39,17 @@ void getTime(int *hour, int *min, int * sec) //https://stackoverflow.com/questio
 }
 
 typedef struct customerArgs{
+    linkedlist * queue;
     int tc;
     int size;
-}args;
+}customerArgs;
+
+typedef struct tellerArgs{
+    linkedlist * queue;
+    char * tellerName;
+    int queueSize;
+
+}tellerArgs;
 
 typedef struct customerInfo{
     int customerNo;
@@ -47,19 +58,24 @@ typedef struct customerInfo{
 }customerInfo;
 
 void * customer(void *arg){
-    linkedlist * queue = createLinkedList();
-    args *data = arg;
+    customerArgs *data = arg;
     int hour,min,sec;
     FILE *fpFile = fopen("c_file", "r");
     for (int i =0; i<data->size;i++){
         customerInfo *customers = (customerInfo*)(malloc(sizeof(customerInfo)));
         sleep(data->tc);
-        fscanf(fpFile, "%d %c\n", &customers->customerNo, &customers->service);
-        insertLast(queue,customers);
-        getTime(&hour,&min,&sec);
-        r_log(customers->customerNo,customers->service,hour,min,sec);
+        int file_items = fscanf(fpFile, "%d %c\n", &customers->customerNo, &customers->service);
+        if (file_items != 2) {
+            free(customers);  // free memory allocated for customers
+            break; 
+        }
+        insertLast(data->queue, customers);
+        getTime(&hour, &min, &sec);
+        r_log(customers->customerNo, customers->service, hour, min, sec);
+        pthread_cond_broadcast(&tellerCond);
     }
     fclose(fpFile);
+  
     return NULL;
 }
 
@@ -67,17 +83,66 @@ void printData(void *data){
     printf("(%d, %c)->", ((customerInfo*)data)->customerNo,((customerInfo*)data)->service);
 }
 
+void teller(void *arg){
+    tellerArgs * data = arg;
+    customerInfo * customer;
+    pthread_mutex_lock(&tellerMutex);
+    while(1){
+    
+        while(data->queue->count ==0){
+            // printf("Waiting for customer...\n");
+            pthread_cond_wait(&tellerCond, &tellerMutex);
+        }
+
+        while(data->queue->count == data->queueSize){
+            printf("Queue is full...\n");
+            pthread_cond_wait(&tellerCond, &tellerMutex);
+        }
+
+        if(data->queue->count >0){          
+            customer = deleteFirst(data->queue);
+            pthread_mutex_unlock(&tellerMutex);
+            printf("%s Serving: Customer %d\n",data->tellerName,customer->customerNo);
+        
+            }
+        else{
+            pthread_mutex_unlock(&tellerMutex);
+        }
+    }
+
+
+}
+
+
+
 int main(int argc, char *argv[]){
-    // customer(1,5);
-    // printList(queue,&printData);
     int tc =1;
-    int queueSize = 5;
-    args data = {tc,queueSize};
+    int queueSize = 10;
+    linkedlist * queue = createLinkedList();
+    customerArgs data = {queue,tc,queueSize};
+    tellerArgs teller1Args = {queue, "Teller 1",queueSize};
+    tellerArgs teller2Args = {queue, "Teller 2",queueSize};
+    tellerArgs teller3Args = {queue, "Teller 3",queueSize};
+    tellerArgs teller4Args = {queue, "Teller 4",queueSize};
+    pthread_mutex_init(&tellerMutex, NULL);
+    pthread_cond_init(&tellerCond, NULL);
+    
 
-    pthread_create(&thread1,NULL,(void*)customer,(void*)&data);
-    pthread_join(thread1,NULL);
+    pthread_create(&customerthread,NULL,(void*)customer,(void*)&data);
+    pthread_create(&teller1,NULL,(void*)teller,(void*)&teller1Args);
+    pthread_create(&teller2,NULL,(void*)teller,(void*)&teller2Args);
+    pthread_create(&teller3,NULL,(void*)teller,(void*)&teller3Args);
+    pthread_create(&teller4,NULL,(void*)teller,(void*)&teller4Args);
+    pthread_join(customerthread,NULL);
 
+    pthread_join(teller1,NULL);
+    pthread_join(teller2,NULL);
+    pthread_join(teller3,NULL);
+    pthread_join(teller4,NULL);
 
+    freeLinkedList(queue);
+    pthread_mutex_destroy(&tellerMutex);
+    pthread_cond_destroy(&tellerCond);
 
 
 
