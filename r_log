@@ -1,260 +1,267 @@
 -----------------------------------------------------------------------
 1: W
-Arrival time: 12:27:56
+Arrival time: 14:11:08
 -----------------------------------------------------------------------
 Teller: 1
 Customer: 1
-Arrival time: 12:27:56
-Response time: 12:27:56
+Arrival time: 14:11:08
+Response time: 14:11:08
     Teller: 1
     Customer: 1
-    Arrival time: 12:27:56
-    Completion time: 12:27:57
+    Arrival time: 14:11:08
+    Completion time: 14:11:09
 -----------------------------------------------------------------------
 2: W
-Arrival time: 12:27:57
+Arrival time: 14:11:09
 -----------------------------------------------------------------------
 Teller: 1
 Customer: 2
-Arrival time: 12:27:57
-Response time: 12:27:57
+Arrival time: 14:11:09
+Response time: 14:11:09
     Teller: 1
     Customer: 2
-    Arrival time: 12:27:57
-    Completion time: 12:27:58
+    Arrival time: 14:11:09
+    Completion time: 14:11:10
 -----------------------------------------------------------------------
 3: W
-Arrival time: 12:27:58
+Arrival time: 14:11:10
 -----------------------------------------------------------------------
 Teller: 1
 Customer: 3
-Arrival time: 12:27:58
-Response time: 12:27:58
+Arrival time: 14:11:10
+Response time: 14:11:10
     Teller: 1
     Customer: 3
-    Arrival time: 12:27:58
-    Completion time: 12:27:59
+    Arrival time: 14:11:10
+    Completion time: 14:11:11
 -----------------------------------------------------------------------
 4: I
-Arrival time: 12:27:59
+Arrival time: 14:11:11
 -----------------------------------------------------------------------
 Teller: 1
 Customer: 4
-Arrival time: 12:27:59
-Response time: 12:27:59
+Arrival time: 14:11:11
+Response time: 14:11:11
     Teller: 1
     Customer: 4
-    Arrival time: 12:27:59
-    Completion time: 12:28:00
+    Arrival time: 14:11:11
+    Completion time: 14:11:12
 -----------------------------------------------------------------------
 5: I
-Arrival time: 12:28:00
+Arrival time: 14:11:12
 -----------------------------------------------------------------------
-Teller: 1
+Teller: 2
 Customer: 5
-Arrival time: 12:28:00
-Response time: 12:28:00
-    Teller: 1
+Arrival time: 14:11:12
+Response time: 14:11:12
+    Teller: 2
     Customer: 5
-    Arrival time: 12:28:00
-    Completion time: 12:28:01
+    Arrival time: 14:11:12
+    Completion time: 14:11:13
 -----------------------------------------------------------------------
 6: D
-Arrival time: 12:28:01
+Arrival time: 14:11:13
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+7: D
+Arrival time: 14:11:14
 -----------------------------------------------------------------------
 Teller: 2
 Customer: 6
-Arrival time: 12:28:01
-Response time: 12:28:01
+Arrival time: 14:11:13
+Response time: 14:11:13
     Teller: 2
     Customer: 6
-    Arrival time: 12:28:01
-    Completion time: 12:28:02
------------------------------------------------------------------------
-7: D
-Arrival time: 12:28:02
------------------------------------------------------------------------
+    Arrival time: 14:11:13
+    Completion time: 14:11:14
+Teller: 4
+Customer: 7
+Arrival time: 14:11:14
+Response time: 14:11:14
+    Teller: 4
+    Customer: 7
+    Arrival time: 14:11:14
+    Completion time: 14:11:15
 -----------------------------------------------------------------------
 8: I
-Arrival time: 12:28:03
+Arrival time: 14:11:15
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 7
-Arrival time: 12:28:02
-Response time: 12:28:02
-    Teller: 2
-    Customer: 7
-    Arrival time: 12:28:02
-    Completion time: 12:28:03
-Teller: 3
-Customer: 8
-Arrival time: 12:28:03
-Response time: 12:28:03
-    Teller: 3
-    Customer: 8
-    Arrival time: 12:28:03
-    Completion time: 12:28:04
 -----------------------------------------------------------------------
 9: I
-Arrival time: 12:28:04
+Arrival time: 14:11:16
 -----------------------------------------------------------------------
+Teller: 1
+Customer: 8
+Arrival time: 14:11:15
+Response time: 14:11:15
+    Teller: 1
+    Customer: 8
+    Arrival time: 14:11:15
+    Completion time: 14:11:16
 Teller: 3
 Customer: 9
-Arrival time: 12:28:04
-Response time: 12:28:04
+Arrival time: 14:11:16
+Response time: 14:11:16
     Teller: 3
     Customer: 9
-    Arrival time: 12:28:04
-    Completion time: 12:28:05
+    Arrival time: 14:11:16
+    Completion time: 14:11:17
 -----------------------------------------------------------------------
 10: D
-Arrival time: 12:28:05
+Arrival time: 14:11:17
 -----------------------------------------------------------------------
+Teller: 2
+Customer: 10
+Arrival time: 14:11:17
+Response time: 14:11:17
+    Teller: 2
+    Customer: 10
+    Arrival time: 14:11:17
+    Completion time: 14:11:18
 -----------------------------------------------------------------------
 11: W
-Arrival time: 12:28:06
+Arrival time: 14:11:18
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 10
-Arrival time: 12:28:05
-Response time: 12:28:05
-    Teller: 3
-    Customer: 10
-    Arrival time: 12:28:05
-    Completion time: 12:28:06
 Teller: 2
 Customer: 11
-Arrival time: 12:28:06
-Response time: 12:28:06
+Arrival time: 14:11:18
+Response time: 14:11:18
     Teller: 2
     Customer: 11
-    Arrival time: 12:28:06
-    Completion time: 12:28:07
+    Arrival time: 14:11:18
+    Completion time: 14:11:19
 -----------------------------------------------------------------------
 12: W
-Arrival time: 12:28:07
+Arrival time: 14:11:19
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 12
-Arrival time: 12:28:07
-Response time: 12:28:07
-    Teller: 2
-    Customer: 12
-    Arrival time: 12:28:07
-    Completion time: 12:28:08
 -----------------------------------------------------------------------
 13: D
-Arrival time: 12:28:08
+Arrival time: 14:11:20
 -----------------------------------------------------------------------
-Teller: 4
+Teller: 1
+Customer: 12
+Arrival time: 14:11:19
+Response time: 14:11:19
+    Teller: 1
+    Customer: 12
+    Arrival time: 14:11:19
+    Completion time: 14:11:20
+Teller: 3
 Customer: 13
-Arrival time: 12:28:08
-Response time: 12:28:08
-    Teller: 4
+Arrival time: 14:11:20
+Response time: 14:11:20
+    Teller: 3
     Customer: 13
-    Arrival time: 12:28:08
-    Completion time: 12:28:09
+    Arrival time: 14:11:20
+    Completion time: 14:11:21
 -----------------------------------------------------------------------
 14: W
-Arrival time: 12:28:09
+Arrival time: 14:11:21
 -----------------------------------------------------------------------
 Teller: 4
 Customer: 14
-Arrival time: 12:28:09
-Response time: 12:28:09
+Arrival time: 14:11:21
+Response time: 14:11:21
     Teller: 4
     Customer: 14
-    Arrival time: 12:28:09
-    Completion time: 12:28:10
+    Arrival time: 14:11:21
+    Completion time: 14:11:22
 -----------------------------------------------------------------------
 15: W
-Arrival time: 12:28:10
+Arrival time: 14:11:22
 -----------------------------------------------------------------------
 Teller: 4
 Customer: 15
-Arrival time: 12:28:10
-Response time: 12:28:10
+Arrival time: 14:11:22
+Response time: 14:11:22
     Teller: 4
     Customer: 15
-    Arrival time: 12:28:10
-    Completion time: 12:28:11
+    Arrival time: 14:11:22
+    Completion time: 14:11:23
 -----------------------------------------------------------------------
 16: I
-Arrival time: 12:28:11
+Arrival time: 14:11:23
 -----------------------------------------------------------------------
 Teller: 4
 Customer: 16
-Arrival time: 12:28:11
-Response time: 12:28:11
+Arrival time: 14:11:23
+Response time: 14:11:23
     Teller: 4
     Customer: 16
-    Arrival time: 12:28:11
-    Completion time: 12:28:12
+    Arrival time: 14:11:23
+    Completion time: 14:11:24
 -----------------------------------------------------------------------
 17: I
-Arrival time: 12:28:12
+Arrival time: 14:11:24
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 18: I
-Arrival time: 12:28:13
+Arrival time: 14:11:25
 -----------------------------------------------------------------------
 Teller: 4
 Customer: 17
-Arrival time: 12:28:12
-Response time: 12:28:12
+Arrival time: 14:11:24
+Response time: 14:11:24
     Teller: 4
     Customer: 17
-    Arrival time: 12:28:12
-    Completion time: 12:28:13
-Teller: 1
+    Arrival time: 14:11:24
+    Completion time: 14:11:25
+Teller: 2
 Customer: 18
-Arrival time: 12:28:13
-Response time: 12:28:13
-    Teller: 1
+Arrival time: 14:11:25
+Response time: 14:11:25
+    Teller: 2
     Customer: 18
-    Arrival time: 12:28:13
-    Completion time: 12:28:14
+    Arrival time: 14:11:25
+    Completion time: 14:11:26
 -----------------------------------------------------------------------
 19: I
-Arrival time: 12:28:14
+Arrival time: 14:11:26
 -----------------------------------------------------------------------
-Teller: 1
+Teller: 2
 Customer: 19
-Arrival time: 12:28:14
-Response time: 12:28:14
-    Teller: 1
+Arrival time: 14:11:26
+Response time: 14:11:26
+    Teller: 2
     Customer: 19
-    Arrival time: 12:28:14
-    Completion time: 12:28:15
+    Arrival time: 14:11:26
+    Completion time: 14:11:27
 -----------------------------------------------------------------------
 20: W
-Arrival time: 12:28:15
+Arrival time: 14:11:27
 -----------------------------------------------------------------------
-Teller: 1
+Teller: 3
 Customer: 20
-Arrival time: 12:28:15
-Response time: 12:28:15
-    Teller: 1
+Arrival time: 14:11:27
+Response time: 14:11:27
+    Teller: 3
     Customer: 20
-    Arrival time: 12:28:15
-    Completion time: 12:28:16
+    Arrival time: 14:11:27
+    Completion time: 14:11:28
 ------------------------------
 Termination: Teller-4
-Served Customer: 17
-Start time: 12:27:55
-Termination time: 12:28:16
+Number of Served Customer: 5
+Start time: 14:11:07
+Termination time: 14:11:28
 ------------------------------
 Termination: Teller-2
-Served Customer: 12
-Start time: 12:27:55
-Termination time: 12:28:16
+Number of Served Customer: 6
+Start time: 14:11:07
+Termination time: 14:11:28
 ------------------------------
 Termination: Teller-1
-Served Customer: 20
-Start time: 12:27:55
-Termination time: 12:28:16
+Number of Served Customer: 6
+Start time: 14:11:07
+Termination time: 14:11:28
 ------------------------------
 Termination: Teller-3
-Served Customer: 10
-Start time: 12:27:55
-Termination time: 12:28:16
+Number of Served Customer: 3
+Start time: 14:11:07
+Termination time: 14:11:28
+
+Teller Statistics
+Teller-1 Serves 6 customers
+Teller-2 Serves 6 customers
+Teller-3 Serves 3 customers
+Teller-4 Serves 5 customers
+Total number of customers: 20 customers. 

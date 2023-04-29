@@ -9,10 +9,13 @@
 
 pthread_mutex_t tellerMutex;
 pthread_cond_t tellerCond;
-// int hour, min, sec;
-// int startHour, startMin, startSec;
+
 int tw,td,ti;
 int terminateTellers= 0;
+int activeTellers= 4;
+int tellerServedCount[4] = {0};
+int totalServed=0;
+
 
 
 void getTime(int *hour, int *min, int * sec) //https://stackoverflow.com/questions/5141960/get-the-current-time-in-c a cheeky little help from stack overflow
@@ -53,7 +56,7 @@ void r_log(int customerNo, char serviceType, int hour, int min, int sec){
 typedef struct customerArgs{
     linkedlist * queue;
     int tc;
-    int size;
+    int queueSize;
 
 }customerArgs;
 
@@ -79,20 +82,20 @@ void printData(void *data){
     printf("(%d, %c)->", ((customerInfo*)data)->customerNo,((customerInfo*)data)->service);
 }
 
-void * customer(void *arg){
+void customer(void *arg){
     int i;
     customerArgs *data = arg;
     int hour, min, sec;
 
     FILE *fpFile = fopen("c_file", "r");
-    for (i =0; i<data->size;i++){
+    for (i =0; i<data->queueSize;i++){
         customerInfo *customers = (customerInfo*)(malloc(sizeof(customerInfo)));
         sleep(data->tc);
         int customerFile = fscanf(fpFile, "%d %c\n", &customers->customerNo, &customers->service);
-        if (customerFile != 2) { // if it reaches the end of the file then it breaks and doesnt add any more
+        if (customerFile != 2) { // if it reaches the end of the file then it breaks because theres no more customers to serve
             free(customers);  // free memory allocated for customers
-            terminateTellers = 1;
-            pthread_cond_broadcast(&tellerCond);
+            terminateTellers = 1; // terminate all tellers
+            pthread_cond_broadcast(&tellerCond); //broadcast to all tellers saying that it has reached the end of the file and they should terminate
             break; 
         }
         insertLast(data->queue, customers);
@@ -103,7 +106,6 @@ void * customer(void *arg){
     fclose(fpFile);
     
   
-    return NULL;
 }
 
 
@@ -113,43 +115,64 @@ void teller(void *arg){
     tellerArgs * data = arg;
     customerInfo * customer;
     int hour, min, sec;
+    int servedCount=0;
+
 
     tw = 1;
     td =1;
     ti =1;
 
     pthread_mutex_lock(&tellerMutex);
+    
     while(1){
         if (terminateTellers==1 && data->queue->count ==0){
+            totalServed+= servedCount;
+
+            
             printf("Terminating teller %d\n",data->tellerNo);
             pthread_cond_broadcast(&tellerCond);
             pthread_mutex_unlock(&tellerMutex);
+
+            pthread_mutex_lock(&tellerMutex);
             FILE *logFp = fopen("r_log","a");
             fprintf(logFp,"------------------------------\n");
             fprintf(logFp,"Termination: Teller-%d\n",data->tellerNo);
-            fprintf(logFp,"Served Customer: %d\n",customer->customerNo);
+            fprintf(logFp,"Number of Served Customer: %d\n",servedCount);
             fprintf(logFp, "Start time: %02d:%02d:%02d\n", data->startHour, data->startMin ,data->startSec);
             getTime(&hour, &min, &sec);
             fprintf(logFp, "Termination time: %02d:%02d:%02d\n", hour, min ,sec);
+            activeTellers --;
+            pthread_mutex_unlock(&tellerMutex);
+
+            if (activeTellers == 0){
+                // printf("last teller %d\n",data->tellerNo );
+                fprintf(logFp,"\nTeller Statistics\n");
+                // fprintf(logFp,"Teller-%d Serves %d customers\n",data->tellerNo,servedCount);
+                for (int i = 0; i < 4; i++) {
+                    fprintf(logFp, "Teller-%d Serves %d customers\n", i+1, tellerServedCount[i]);
+                }
+                fprintf(logFp,"Total number of customers: %d customers. \n",totalServed);
+
+            }
+            
+
+            
+            
+            
 
             break;
         }
     
         while(data->queue->count ==0 && terminateTellers ==0){
          
-            printf("teller %d Waiting..\n",data->tellerNo);
             pthread_cond_wait(&tellerCond, &tellerMutex);
     
         }
 
-        // while(data->queue->count == data->queueSize){
-        //     printf("Queue is full...\n");
-        //     pthread_cond_wait(&tellerCond, &tellerMutex);
-        // }
-
         if(data->queue->count >0){  
-
-            customer = deleteFirst(data->queue);
+            customer = deleteFirst(data->queue); // remove customer from queue
+            servedCount ++;
+            tellerServedCount[data->tellerNo-1]++;
             pthread_mutex_unlock(&tellerMutex);
             FILE *logFp = fopen("r_log","a");
             fprintf(logFp,"Teller: %d\n",data->tellerNo);
