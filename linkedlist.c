@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include "linkedlist.h"
 
-//linked list used in UCP
+//updated linked list used in UCP
 
-linkedlist * createLinkedList(){
+linkedlist * createLinkedList(int queueSize){
     linkedlist * list;
     list = (linkedlist*)malloc(sizeof(linkedlist));
     list->head = NULL;
     list->count = 0;
+    list->queueSize = queueSize;
     return list;
 }
 
@@ -17,6 +18,10 @@ void insertLast(linkedlist *list, void * value){
     node * currNode = list->head;
     newNode->value = value;
     newNode->next = NULL;
+    if (list->count == list->queueSize){
+        printf("Queue Full\n");
+        return;
+    }
     if (list->count == 0) {
         list->head = newNode;
     }
@@ -38,14 +43,15 @@ void* deleteFirst(linkedlist *list)
     else if(temp->next ==NULL){
         data = temp->value;
         list->head = NULL;
+        free(temp);
 
     }
     else{
         data = temp->value;
         list->head = list->head->next;
+        free(temp);
     }
     list->count--;
-    free(temp);
     return data;
 
 }

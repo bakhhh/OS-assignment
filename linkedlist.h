@@ -8,15 +8,16 @@ typedef struct node{
 
 }node;
 
-typedef struct {
+typedef struct linkedlist{
     node * head;
     int count;
+    int queueSize;
 
 }linkedlist;
 
 typedef void (*listFunc)(void* data);
 
-linkedlist * createLinkedList();
+linkedlist * createLinkedList(int queueSize);
 void insertLast(linkedlist *list, void * value);
 void *deleteFirst(linkedlist *list);
 void printList(linkedlist *list,listFunc funcPtr);
