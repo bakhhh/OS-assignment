@@ -22,7 +22,7 @@ void insertLast(linkedlist *list, void * value){
         printf("Queue Full\n");
         return;
     }
-    if (list->count == 0) {
+    if (list->head == NULL) {
         list->head = newNode;
     }
     else{
@@ -37,19 +37,21 @@ void* deleteFirst(linkedlist *list)
 {
     void *data = NULL;
     node *temp = list->head;
-    if (list->count ==0){
+    
+    if (list->head ==NULL){
         printf("empty\n");
     }
     else if(temp->next ==NULL){
         data = temp->value;
         list->head = NULL;
         free(temp);
-
+        temp = NULL;
     }
     else{
         data = temp->value;
         list->head = list->head->next;
         free(temp);
+        temp = NULL;
     }
     list->count--;
     return data;
