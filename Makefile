@@ -1,7 +1,7 @@
 CC		 = gcc
 EXEC	 = main
 CFLAGS = -g -Wall 
-OBJ 	 = main.o linkedlist.o functions.o
+OBJ 	 = main.o linkedlist.o functions.o teller.o customer.o
 
 
 $(EXEC) : $(OBJ)
@@ -17,6 +17,11 @@ functions.o : functions.c functions.h
 	$(CC) $(CFLAGS) functions.c -c
 
 
+teller.o : teller.c teller.h
+	$(CC) $(CFLAGS) teller.c -c
+
+customer.o : customer.c customer.h
+	$(CC) $(CFLAGS) customer.c -c
 
 clean:
 	rm -f $(EXEC) $(OBJ)

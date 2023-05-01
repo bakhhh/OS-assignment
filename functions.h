@@ -1,40 +1,16 @@
 #ifndef FUNCTIONS
 #define FUNCTIONS
 #include "linkedlist.h"
+#include "teller.h"
+#include "customer.h"
 
 
-typedef struct customerArgs{
-    linkedlist * queue;
-    int customerTime;
-
-}customerArgs;
-
-typedef struct tellerArgs{
-    linkedlist * queue;
-    int tellerNo;
-    int startHour;
-    int startMin;
-    int startSec;
-    int withdrawTime;
-    int depositTime;
-    int informationTime;
-
-    
-}tellerArgs;
-
-typedef struct customerInfo{
-    int customerNo;
-    char service;
-    int arrivalHour;
-    int arrivalMin;
-    int arrivalSec;
-
-}customerInfo;
 
 void getTime(int *hour, int *min, int * sec);
 void resetLog();
 void customer_r_log(int customerNo, char serviceType, int hour, int min, int sec);
 void teller_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int hour,int min, int sec);
+void terminate_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int servedCount,int hour,int min, int sec);
 void printData(void *data);
 
 #endif

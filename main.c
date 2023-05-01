@@ -1,3 +1,7 @@
+//Name: Sohail Bakhshi
+//ID: 20605126
+// 2023 OS Assignment
+// main.c contains the main function which contains threads running the customer and teller functions
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
@@ -6,181 +10,61 @@
 #include <time.h>
 #include "linkedlist.h"
 #include "functions.h"
+#include "teller.h"
+#include "customer.h"
 
 
-pthread_mutex_t tellerMutex;
-pthread_cond_t tellerCond;
 
-int terminateTellers= 0;
-int activeTellers= 4;
-int tellerServedCount[4] = {0};
-int totalServed=0;
-
-
-void customer(void *arguments){
-    customerArgs *data = arguments;
-    
-    FILE *fpFile = fopen("c_file", "r");
-
-    while(1){
-        pthread_mutex_lock(&tellerMutex);
-        while (data->queue->count == data->queue->queueSize){
-            pthread_cond_wait(&tellerCond, &tellerMutex);
-        }
-        if (data->queue->count != data->queue->queueSize){
-            pthread_mutex_unlock(&tellerMutex);
-            customerInfo *customers = (customerInfo*)(malloc(sizeof(customerInfo)));
-            int customerFile = fscanf(fpFile, "%d %c\n", &customers->customerNo, &customers->service);
-            if (customerFile != 2) { // if it reaches the end of the file then it breaks because theres no more customers to serve
-                free(customers);  // free memory allocated for customers
-                terminateTellers = 1; // terminate all tellers
-                pthread_cond_broadcast(&tellerCond); //broadcast to all tellers saying that it has reached the end of the file and they should terminate
-                break; 
-            }
-            insertLast(data->queue, customers);
-            getTime(&customers->arrivalHour,&customers->arrivalMin,&customers->arrivalSec);
-            customer_r_log(customers->customerNo, customers->service,customers->arrivalHour, customers->arrivalMin, customers->arrivalSec);
-            // pthread_mutex_unlock(&tellerMutex);
-            pthread_cond_broadcast(&tellerCond);
-
-    
-            // pthread_mutex_unlock(&tellerMutex);
-            sleep(data->customerTime);
-        }
-    }
-    fclose(fpFile);
-}
-
-
-void teller(void *arguments){
-    tellerArgs * data = arguments;
-    customerInfo * customer;
-    int hour, min, sec;
-    int servedCount=0;
-
-
-    while(1){
-        pthread_mutex_lock(&tellerMutex);
-
-        while(data->queue->count ==0 && terminateTellers ==0){
-            pthread_cond_wait(&tellerCond, &tellerMutex);
-        }
-
-        if(data->queue->count >0){  
-            customer = deleteFirst(data->queue); // remove customer from queue
-            //printf("teller %d in critical section\n",data->tellerNo);
-            servedCount ++;
-            tellerServedCount[data->tellerNo-1]++;
-            pthread_mutex_unlock(&tellerMutex);
-            pthread_cond_signal(&tellerCond);
-            
-            FILE *logFp = fopen("r_log","a");
-            fprintf(logFp,"Teller: %d\n",data->tellerNo);
-            fprintf(logFp,"Customer: %d\n",customer->customerNo);
-            getTime(&hour,&min,&sec);
-            fprintf(logFp, "Arrival time: %02d:%02d:%02d\n",customer->arrivalHour, customer->arrivalMin ,customer->arrivalSec);
-            fprintf(logFp, "Response time: %02d:%02d:%02d\n", hour, min ,sec);
-            printf("Teller %d Serving: Customer %d\n",data->tellerNo,customer->customerNo);
-            
-            if (strcmp(&customer->service,"W")==0){
-                teller_r_log(logFp,customer,data,hour,min,sec);
-            }
-            else if (strcmp(&customer->service,"I")==0){
-                teller_r_log(logFp,customer,data,hour,min,sec);
-            }
-            else if (strcmp(&customer->service,"D")==0){
-                teller_r_log(logFp,customer,data,hour,min,sec);
-            }
-            //printf("teller %d done from critical section\n",data->tellerNo);
-            fclose(logFp);
-            pthread_mutex_lock(&tellerMutex); // was getting a race condition where mutliple threads where freeing memory that had already been freed.
-            free(customer);
-            pthread_mutex_unlock(&tellerMutex);
-            pthread_cond_signal(&tellerCond);
-        
-            }
-        
-        if (terminateTellers==1 && data->queue->count ==0){
-            totalServed+= servedCount;
-
-            
-            printf("Terminating teller %d\n",data->tellerNo);
-
-            
-            FILE *logFp = fopen("r_log","a");
-            fprintf(logFp,"\nTermination: Teller-%d\n",data->tellerNo);
-            fprintf(logFp,"Number of Served Customer: %d\n",servedCount);
-            fprintf(logFp, "Start time: %02d:%02d:%02d\n", data->startHour, data->startMin ,data->startSec);
-            getTime(&hour, &min, &sec);
-            fprintf(logFp, "Termination time: %02d:%02d:%02d\n", hour, min ,sec);
-            activeTellers --; // because each teller is terminating they should subtract from 4 so that i can determine the last teller
-            
-
-            if (activeTellers == 0){ // last teller returns all teller stats to the file
-                fprintf(logFp,"\nTeller Statistics\n");
-                for (int i = 0; i < 4; i++) {
-                    fprintf(logFp, "Teller-%d Serves %d customers\n", i+1, tellerServedCount[i]);
-                }
-                fprintf(logFp,"\nTotal number of customers: %d customers. \n",totalServed);
-                fclose(logFp);
-
-            }
-            pthread_mutex_unlock(&tellerMutex);
-
-            break;
-        }
-    }
-}
 
 int main(int argc, char *argv[]){
+    int queueSize = atoi(argv[1]); // first argument in the commandline will be the queue size
+    int tc = atoi(argv[2]); // second command line argument will be time the customer takes to enter the queue
+    int tw = atoi(argv[3]); // third command line argument will be the time it takes for a teller to serve customers that are withdrawing
+    int td = atoi(argv[4]); // fourth command line argument will be the time it takes for a teller to serve customers that are depositing
+    int ti = atoi(argv[5]); // fifth command line argument will be the time it takes for a teller to serve customers that are wanting information
+    int startHour, startMin, startSec; 
     if (argc != 6){
         printf("----------------------------\nError: To run enter ./main m tc tw td ti\nQueue Size (m)\nTime for customers to enter queue (tc)\nTime to withdraw (tw)\nTime to deposit(td)\nTime to get information(ti)\n----------------------------\n");
     }
     else{
 
-        
-        int queueSize = atoi(argv[1]);
-        int tc = atoi(argv[2]); 
-        int tw = atoi(argv[3]);
-        int td = atoi(argv[4]);
-        int ti = atoi(argv[5]);
-
-        int startHour, startMin, startSec;
         resetLog(); //reset the log file each time i run the program
-        pthread_t customerThread;
-        pthread_t teller1;
-        pthread_t teller2;
-        pthread_t teller3;
-        pthread_t teller4;
-        linkedlist * queue = createLinkedList(queueSize);
+        pthread_t customerThread; //customer thread
+        pthread_t teller1; //teller thread
+        pthread_t teller2; //teller thread
+        pthread_t teller3; //teller thread
+        pthread_t teller4; //teller thread
+        linkedlist * queue = createLinkedList(queueSize); //intialising fifo linked list / queue that ill be using to insert customers
         
-        customerArgs data = {queue,tc};
+        customerArgs data = {queue,tc}; // parameters for my customer function used in a struct to pass to customer thread
 
         getTime(&startHour, &startMin, &startSec);//get the start time of the tellers
+        // parameters for my teller function used in a struct to pass to teller thread
         tellerArgs teller1Args = {queue, 1 ,startHour,startMin,startSec,tw,td,ti};
         tellerArgs teller2Args = {queue, 2,startHour,startMin,startSec,tw,td,ti};
         tellerArgs teller3Args = {queue, 3,startHour,startMin,startSec,tw,td,ti};
         tellerArgs teller4Args = {queue, 4,startHour,startMin,startSec,tw,td,ti};
 
-        pthread_mutex_init(&tellerMutex, NULL);
-        pthread_cond_init(&tellerCond, NULL);
+        pthread_mutex_init(&tellerMutex, NULL); // mutex initialised
+        pthread_cond_init(&tellerCond, NULL); // condition initialised
         
-
+        //create the threads
         pthread_create(&customerThread,NULL,(void*)customer,(void*)&data);
         pthread_create(&teller1,NULL,(void*)teller,(void*)&teller1Args);
         pthread_create(&teller2,NULL,(void*)teller,(void*)&teller2Args);
         pthread_create(&teller3,NULL,(void*)teller,(void*)&teller3Args);
         pthread_create(&teller4,NULL,(void*)teller,(void*)&teller4Args);
         
+        //join the threads
         pthread_join(customerThread,NULL);
         pthread_join(teller1,NULL);
         pthread_join(teller2,NULL);
         pthread_join(teller3,NULL);
         pthread_join(teller4,NULL);
 
-        freeLinkedList(queue);
-        pthread_mutex_destroy(&tellerMutex);
-        pthread_cond_destroy(&tellerCond);
+        freeLinkedList(queue); //free allocated memory for the queue
+        pthread_mutex_destroy(&tellerMutex); // destroy mutex
+        pthread_cond_destroy(&tellerCond); // destroy condition
 
     }
 

@@ -1,1828 +1,1828 @@
 -----------------------------------------------------------------------
 1: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 1
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 1
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 2: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 2
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 2
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+Teller: 1
+Customer: 1
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 1
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 3: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 3
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 3
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+Teller: 1
+Customer: 2
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 2
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 4: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
+Teller: 1
+Customer: 3
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 3
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+-----------------------------------------------------------------------
+5: I
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+6: D
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 Teller: 4
 Customer: 4
-Arrival time: 18:15:12
-Response time: 18:15:12
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 4
     Customer: 4
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
------------------------------------------------------------------------
-5: I
-Arrival time: 18:15:12
------------------------------------------------------------------------
-Teller: 1
-Customer: 5
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 5
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
------------------------------------------------------------------------
-6: D
-Arrival time: 18:15:12
------------------------------------------------------------------------
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 7: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 6
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 6
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+Teller: 3
+Customer: 5
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 5
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 8: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
+Teller: 4
 Customer: 7
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
     Customer: 7
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 Teller: 3
-Customer: 8
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 6
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 3
+    Customer: 6
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 8
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
     Customer: 8
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 9: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 9
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 9
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 10: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
+Teller: 1
+Customer: 9
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 9
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+-----------------------------------------------------------------------
+11: W
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+12: W
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+13: D
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 Teller: 1
 Customer: 10
-Arrival time: 18:15:12
-Response time: 18:15:12
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 1
     Customer: 10
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
------------------------------------------------------------------------
-11: W
-Arrival time: 18:15:12
------------------------------------------------------------------------
-Teller: 1
-Customer: 11
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 11
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
------------------------------------------------------------------------
-12: W
-Arrival time: 18:15:12
------------------------------------------------------------------------
-Teller: 3
-Customer: 12
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 12
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
------------------------------------------------------------------------
-13: D
-Arrival time: 18:15:12
------------------------------------------------------------------------
-Teller: 2
-Customer: 13
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 13
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 14: W
-Arrival time: 18:15:12
------------------------------------------------------------------------
------------------------------------------------------------------------
-15: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 Teller: 2
-Customer: 15
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 12
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 2
-    Customer: 15
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 1
-Customer: 14
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 14
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Customer: 12
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 11
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 11
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+-----------------------------------------------------------------------
+15: W
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
 -----------------------------------------------------------------------
 16: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 16
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 16
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 17: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 17
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 17
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 18: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 18
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 18
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 19: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 20: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 19
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 19
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 4
-Customer: 20
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 20
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 21: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 21
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 21
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 22: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 22
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 22
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 23: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 23
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 23
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 24: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 25: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 26: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 27: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 24
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 24
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 25
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 25
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 1
-Customer: 27
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 27
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 3
-Customer: 26
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 26
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 28: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 28
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 28
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 29: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 29
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 29
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 30: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 30
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 30
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 31: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 32: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 31
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 31
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 32
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 32
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 33: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 33
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 33
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 34: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 34
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 34
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 35: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 35
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 35
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 36: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
+Teller: 4
+Customer: 14
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 14
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 Teller: 2
-Customer: 36
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 13
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 2
-    Customer: 36
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Customer: 13
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 37: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 Teller: 3
-Customer: 37
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 15
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 3
-    Customer: 37
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Customer: 15
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 38: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 38
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 38
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 39: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 39
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 39
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 40: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 40
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 40
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 41: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 41
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 41
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 42: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 43: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 42
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 42
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 3
-Customer: 43
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 43
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 44
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 44
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 44: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 45: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 46: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 45
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 45
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 46
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 46
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 47: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 47
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 47
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 48: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 49: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 48
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 48
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 1
-Customer: 49
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 49
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 50: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
+Teller: 1
+Customer: 16
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 16
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 18
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 18
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 51: D
-Arrival time: 18:15:12
------------------------------------------------------------------------
-Teller: 4
-Customer: 50
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 50
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
------------------------------------------------------------------------
-52: D
-Arrival time: 18:15:12
------------------------------------------------------------------------
-Teller: 3
-Customer: 51
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 51
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
------------------------------------------------------------------------
-53: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 Teller: 2
-Customer: 52
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 17
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 2
-    Customer: 52
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Customer: 17
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 19
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 19
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 20
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 20
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+-----------------------------------------------------------------------
+52: D
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
 Teller: 1
-Customer: 53
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 21
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 1
-    Customer: 53
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Customer: 21
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+-----------------------------------------------------------------------
+53: W
+Arrival time: 15:44:34
+-----------------------------------------------------------------------
 -----------------------------------------------------------------------
 54: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 54
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 54
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 55: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 55
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 55
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 56: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 57: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 56
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 56
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 58: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 58
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 58
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 57
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 57
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 59: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 59
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 59
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 60: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 61: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 60
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 60
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 61
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 61
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 62: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 62
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 62
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 63: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 63
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 63
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 64: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 65: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 64
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 64
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 1
-Customer: 65
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 65
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 66: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 66
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 66
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 3
-Customer: 67
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 67
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 67: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 68: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 69: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 68
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 68
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 3
-Customer: 69
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 69
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 70: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 70
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 70
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 71: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 71
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 71
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 72: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 72
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 72
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 73: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 74: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 73
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 73
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 4
-Customer: 74
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 74
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 75: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 75
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 75
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 76: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 76
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 76
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 77: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 77
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 77
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 78: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 78
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 78
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 79: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 79
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 79
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 80: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 81: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 80
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 80
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 81
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 81
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 82: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 82
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 82
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 83: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 83
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 83
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 84: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 84
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 84
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 85: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 85
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 85
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 86: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 86
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 86
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 87: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 87
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 87
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 88: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 88
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 88
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 4
-Customer: 89
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 89
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 89: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 90: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 90
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 90
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 91: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 91
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 91
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 92: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 92
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 92
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 93: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 93
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 93
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 94: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 94
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 94
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 95: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 95
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 95
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 96: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 96
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 96
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 97: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 97
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 97
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 98: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 98
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 98
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 99: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 99
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 99
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 100: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 Teller: 3
-Customer: 100
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 22
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 3
-    Customer: 100
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
+    Customer: 22
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 23
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 23
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 24
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 24
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 25
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 25
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 26
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 26
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 27
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 27
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 28
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 28
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 29
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 29
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 30
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 30
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 31
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 31
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 32
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 32
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 33
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 33
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 34
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 34
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 35
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 35
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 36
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 36
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 37
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 37
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 38
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 38
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 39
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 39
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 40
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 40
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 41
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 41
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 42
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 42
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 43
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 43
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 44
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 44
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 45
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 45
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 46
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 46
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 47
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 47
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 48
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 48
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 49
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 49
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 50
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 50
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 -----------------------------------------------------------------------
 101: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 101
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 101
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 102: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 102
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 102
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 103: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 103
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 103
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 104: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 104
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 104
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 105: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 106: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 105
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 105
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 3
-Customer: 106
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 106
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 107: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 107
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 107
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 108: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 109: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 108
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 108
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 110: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 111: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 110
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 110
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 4
-Customer: 109
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 109
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 112: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 111
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 111
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 112
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 112
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 113: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 113
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 113
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 114: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 114
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 114
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 115: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 115
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 115
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 116: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 117: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 116
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 116
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 118: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 117
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 117
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 3
-Customer: 118
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 118
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 119: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 119
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 119
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 120: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 120
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 120
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 121: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 121
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 121
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 122: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 122
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 122
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 123: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 123
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 123
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 124: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 124
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 124
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 125: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 125
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 125
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 126: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 126
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 126
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 1
-Customer: 127
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 127
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 127: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 128: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 129: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 129
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 129
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 1
-Customer: 128
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 128
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 130: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 130
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 130
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 131: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 131
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 131
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 132: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 133: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 132
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 132
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 1
-Customer: 133
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 133
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 134: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 134
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 134
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 135: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 135
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 135
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 136: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 136
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 136
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 137: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 137
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 137
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 138: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 138
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 138
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 139: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 139
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 139
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 140: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 141: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 3
-Customer: 140
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 3
-    Customer: 140
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-Teller: 2
-Customer: 141
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 141
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 142: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 142
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 142
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 143: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 143
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 143
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 144: I
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 144
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 144
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 145: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 1
-Customer: 145
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 1
-    Customer: 145
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 146: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 146
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 146
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 147: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 147
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 147
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 148: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 2
-Customer: 148
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 2
-    Customer: 148
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 149: D
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
-Teller: 4
-Customer: 149
-Arrival time: 18:15:12
-Response time: 18:15:12
-    Teller: 4
-    Customer: 149
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
 -----------------------------------------------------------------------
 150: W
-Arrival time: 18:15:12
+Arrival time: 15:44:34
 -----------------------------------------------------------------------
+Teller: 2
+Customer: 51
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 51
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 52
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 52
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 53
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 53
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 54
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 54
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 56
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 56
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 57
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 57
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 58
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 58
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 59
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 59
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 60
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 60
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 Teller: 4
-Customer: 150
-Arrival time: 18:15:12
-Response time: 18:15:12
+Customer: 61
+Arrival time: 15:44:34
+Response time: 15:44:34
     Teller: 4
+    Customer: 61
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 62
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 62
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 64
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 64
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 65
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 65
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 66
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 66
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 67
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 67
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 68
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 68
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 69
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 69
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 70
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 70
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 71
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 71
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 72
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 72
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 73
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 73
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 74
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 74
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 55
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 55
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 63
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 63
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 76
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 76
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 77
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 77
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 78
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 78
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 75
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 75
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 80
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 80
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 81
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 81
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 82
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 82
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 83
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 83
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 84
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 84
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 85
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 85
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 86
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 86
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 87
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 87
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 79
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 79
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 90
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 90
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 91
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 91
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 92
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 92
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 93
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 93
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 94
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 94
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 95
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 95
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 96
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 96
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 97
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 97
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 98
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 98
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 99
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 99
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 100
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 100
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 89
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 89
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 101
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 101
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 102
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 102
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 88
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 88
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 103
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 103
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 104
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 104
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 105
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 105
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 106
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 106
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 107
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 107
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 108
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 108
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 109
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 109
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 110
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 110
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 111
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 111
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 112
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 112
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 113
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 113
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 114
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 114
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 115
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 115
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 117
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 117
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 118
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 118
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 119
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 119
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 120
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 120
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 121
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 121
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 122
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 122
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 123
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 123
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 116
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 116
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 124
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 124
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 126
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 126
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 127
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 127
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 128
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 128
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 129
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 129
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 130
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 130
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 131
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 131
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 132
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 132
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 133
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 133
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 134
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 134
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 135
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 135
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 136
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 136
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 137
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 137
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 138
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 138
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 139
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 139
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 140
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 140
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 142
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 142
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 143
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 143
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 4
+Customer: 144
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 4
+    Customer: 144
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 125
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 125
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 2
+Customer: 145
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 2
+    Customer: 145
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 146
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 146
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 147
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 147
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 148
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 148
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 141
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
+    Customer: 141
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 3
+Customer: 149
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 3
+    Customer: 149
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
+Teller: 1
+Customer: 150
+Arrival time: 15:44:34
+Response time: 15:44:34
+    Teller: 1
     Customer: 150
-    Arrival time: 18:15:12
-    Completion time: 18:15:12
-
-Termination: Teller-4
-Number of Served Customer: 40
-Start time: 18:15:12
-Termination time: 18:15:12
-
-Teller Statistics
-Teller-1 Serves 35 customers
-Teller-2 Serves 37 customers
-Teller-3 Serves 38 customers
-Teller-4 Serves 40 customers
-
-Total number of customers: 150 customers. 
+    Arrival time: 15:44:34
+    Completion time: 15:44:34
 
 Termination: Teller-3
-Number of Served Customer: 38
-Start time: 18:15:12
-Termination time: 18:15:12
-
-Termination: Teller-2
-Number of Served Customer: 37
-Start time: 18:15:12
-Termination time: 18:15:12
+Number of Served Customer: 53
+Start time: 15:44:34
+Termination time: 15:44:34
 
 Termination: Teller-1
-Number of Served Customer: 35
-Start time: 18:15:12
-Termination time: 18:15:12
+Number of Served Customer: 28
+Start time: 15:44:34
+Termination time: 15:44:34
+
+Termination: Teller-4
+Number of Served Customer: 31
+Start time: 15:44:34
+Termination time: 15:44:34
+
+Termination: Teller-2
+Number of Served Customer: 38
+Start time: 15:44:34
+Termination time: 15:44:34
+
+Teller Statistics
+Teller-1 Serves 28 customers
+Teller-2 Serves 38 customers
+Teller-3 Serves 53 customers
+Teller-4 Serves 31 customers
+
+Total number of customers: 150 customers. 

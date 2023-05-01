@@ -53,6 +53,21 @@ void teller_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int hou
     fprintf(logFp,"    Completion time: %02d:%02d:%02d\n", hour, min ,sec);
 }
 
+void terminate_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int servedCount,int hour,int min, int sec)
+{
+
+    fprintf(logFp,"\nTermination: Teller-%d\n",data->tellerNo);
+    fflush(logFp);
+    fprintf(logFp,"Number of Served Customer: %d\n",servedCount);
+    fflush(logFp);
+    fprintf(logFp, "Start time: %02d:%02d:%02d\n", data->startHour, data->startMin ,data->startSec);
+    fflush(logFp);
+    getTime(&hour, &min, &sec);
+    fprintf(logFp, "Termination time: %02d:%02d:%02d\n", hour, min ,sec);
+    fflush(logFp);
+}
+
+
 
 void printData(void *data) //used this to check if my customers were inserted into my linked list.
 {
