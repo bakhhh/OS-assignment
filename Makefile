@@ -1,3 +1,7 @@
+#makefile to compile my code
+#Name: Sohail Bakhshi
+
+
 CC		 = gcc
 EXEC	 = main
 CFLAGS = -g -Wall 
@@ -15,7 +19,6 @@ linkedlist.o : linkedlist.c linkedlist.h
 
 functions.o : functions.c functions.h
 	$(CC) $(CFLAGS) functions.c -c
-
 
 teller.o : teller.c teller.h
 	$(CC) $(CFLAGS) teller.c -c

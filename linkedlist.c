@@ -1,10 +1,15 @@
+//updated linked list that i created in practical 4 COMP2002 Unix Systems Programming which was also inspired and created based of the content from COMP1000 Unix and C programming
+//used as my c_queue
+//Name: Sohail Bakhshi
+//ID: 20605126
 #include <stdio.h>
 #include <stdlib.h>
 #include "linkedlist.h"
 
-//updated linked list used in UCP
 
-linkedlist * createLinkedList(int queueSize){
+
+linkedlist * createLinkedList(int queueSize)//create linked list data structure which i will be using as my queue
+{
     linkedlist * list;
     list = (linkedlist*)malloc(sizeof(linkedlist));
     list->head = NULL;
@@ -13,41 +18,48 @@ linkedlist * createLinkedList(int queueSize){
     return list;
 }
 
-void insertLast(linkedlist *list, void * value){
+void insertLast(linkedlist *list, void * value) //adding it last makes sense because every node will be in order of arrival meaning the first one will be at the front of the queue
+{
     node * newNode = (node*)malloc(sizeof(node));
     node * currNode = list->head;
     newNode->value = value;
     newNode->next = NULL;
-    if (list->count == list->queueSize){
-        printf("Queue Full\n");
-        return;
+    if (list->count == list->queueSize) //if the number of customers reach the queue limit
+    {
+        printf("Queue is full of customers\n");
     }
-    if (list->head == NULL) {
+    if (list->head == NULL) //if the queue is empty set the head to the new node/customer
+    {
         list->head = newNode;
     }
-    else{
-        while(currNode->next != NULL){
+    else // if theres already customers then iterate through the list and search for the last node and add the new node behind that node
+    {
+        while(currNode->next != NULL)
+        {
             currNode = currNode->next;
         }
         currNode->next = newNode;
     }
     list->count++;
 }
-void* deleteFirst(linkedlist *list)
+void* deleteFirst(linkedlist *list) //fifo queue removes the first in so this is needed to remove the first customer
 {
     void *data = NULL;
     node *temp = list->head;
     
-    if (list->head ==NULL){
-        printf("empty\n");
+    if (list->head ==NULL) // if the linked list /queue is empty 
+    {
+        printf("Theres no customer in the queue\n");
     }
-    else if(temp->next ==NULL){
+    else if(temp->next ==NULL) // if theres only one customer in the queue
+    {
         data = temp->value;
         list->head = NULL;
         free(temp);
         temp = NULL;
     }
-    else{
+    else //if theres multiple customers in the queue
+    {
         data = temp->value;
         list->head = list->head->next;
         free(temp);
@@ -57,20 +69,9 @@ void* deleteFirst(linkedlist *list)
     return data;
 
 }
-
-
-void printList(linkedlist *list, listFunc funcPtr){
-    node * pCur = list->head;
-    while (pCur != NULL) {
-        (*funcPtr)(pCur->value);
-        pCur = pCur->next;
-    }
-    printf("\n");
-
-}
-
-
-void freeNode(node * listnode){
+//recursion used to free allocated memory in the linked list
+void freeNode(node * listnode)
+{
     if(listnode != NULL){
         freeNode(listnode->next);
         free(listnode);

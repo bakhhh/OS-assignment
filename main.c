@@ -36,11 +36,11 @@ int main(int argc, char *argv[]){
         pthread_t teller4; //teller thread
         linkedlist * queue = createLinkedList(queueSize); //intialising fifo linked list / queue that ill be using to insert customers
         
-        customerArgs data = {queue,tc}; // parameters for my customer function used in a struct to pass to customer thread
+        customerArgs customerArguments = {queue,tc}; // parameters for my customer function used in a struct to pass to customer thread
 
         getTime(&startHour, &startMin, &startSec);//get the start time of the tellers
         // parameters for my teller function used in a struct to pass to teller thread
-        tellerArgs teller1Args = {queue, 1 ,startHour,startMin,startSec,tw,td,ti};
+        tellerArgs teller1Args = {queue, 1,startHour,startMin,startSec,tw,td,ti};
         tellerArgs teller2Args = {queue, 2,startHour,startMin,startSec,tw,td,ti};
         tellerArgs teller3Args = {queue, 3,startHour,startMin,startSec,tw,td,ti};
         tellerArgs teller4Args = {queue, 4,startHour,startMin,startSec,tw,td,ti};
@@ -49,7 +49,7 @@ int main(int argc, char *argv[]){
         pthread_cond_init(&tellerCond, NULL); // condition initialised
         
         //create the threads
-        pthread_create(&customerThread,NULL,(void*)customer,(void*)&data);
+        pthread_create(&customerThread,NULL,(void*)customer,(void*)&customerArguments);
         pthread_create(&teller1,NULL,(void*)teller,(void*)&teller1Args);
         pthread_create(&teller2,NULL,(void*)teller,(void*)&teller2Args);
         pthread_create(&teller3,NULL,(void*)teller,(void*)&teller3Args);

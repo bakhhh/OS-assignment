@@ -2,8 +2,6 @@
 #define CUSTOMER
 
 
-pthread_cond_t customerCond;
-
 typedef struct customerArgs{
     linkedlist * queue;
     int customerTime;
