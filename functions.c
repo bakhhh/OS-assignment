@@ -36,34 +36,51 @@ void customer_r_log(int customerNo, char serviceType, int hour, int min, int sec
 {
 
     FILE *logFp = fopen("r_log","a");
-    fprintf(logFp,"-----------------------------------------------------------------------\n");
+    fprintf(logFp,"\n-----------------------------------------------------------------------\n");
     fprintf(logFp,"%d: %c\n",customerNo,serviceType);
     fprintf(logFp, "Arrival time: %02d:%02d:%02d\n", hour, min ,sec);
     fprintf(logFp,"-----------------------------------------------------------------------\n");
+    fflush(logFp);
     fclose(logFp);
 
 }
 
-void teller_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int hour,int min, int sec) // logs the tellers information into rlog
+void log_completion_time(customerInfo * customer, tellerArgs * data,int time) // logs the tellers information into rlog
 {
-    fprintf(logFp,"    Teller: %d\n",data->tellerNo);
-    fprintf(logFp,"    Customer: %d\n",customer->customerNo);
-    fprintf(logFp,"    Arrival time: %02d:%02d:%02d\n", customer->arrivalHour, customer->arrivalMin ,customer->arrivalSec);
-    sleep(data->withdrawTime);
+    int hour, min, sec;
+    FILE *logFp = fopen("r_log", "a");
+    fprintf(logFp,"\nTeller: %d\n",data->tellerNo);
+    fprintf(logFp,"Customer: %d\n",customer->customerNo);
+    fprintf(logFp,"Arrival time: %02d:%02d:%02d\n", customer->arrivalHour, customer->arrivalMin ,customer->arrivalSec);
+    sleep(time);
     getTime(&hour,&min,&sec);
-    fprintf(logFp,"    Completion time: %02d:%02d:%02d\n", hour, min ,sec);
+    fprintf(logFp,"Completion time: %02d:%02d:%02d\n", hour, min ,sec);
+    fflush(logFp);
+    fclose(logFp);
 }
 
-void terminate_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int servedCount,int hour,int min, int sec) //logs the termination of tellers into rlog
+void terminate_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int servedCount) //logs the termination of tellers into rlog
+
 {
+    int hour, min, sec;
     fprintf(logFp,"\nTermination: Teller-%d\n",data->tellerNo);
-    fflush(logFp); // had to use fflush because they were logging their termination in random order so this helped to instantly push it to the file
     fprintf(logFp,"Number of Served Customer: %d\n",servedCount);
-    fflush(logFp);
     fprintf(logFp, "Start time: %02d:%02d:%02d\n", data->startHour, data->startMin ,data->startSec);
-    fflush(logFp);
     getTime(&hour, &min, &sec);
     fprintf(logFp, "Termination time: %02d:%02d:%02d\n", hour, min ,sec);
-    fflush(logFp);
+    fflush(logFp);  // had to use fflush because they were logging their termination in random order so this helped to instantly push it to the file
 }
 
+
+void log_response_time(customerInfo* customer,tellerArgs* data){
+    int hour, min, sec;
+    FILE *logFp = fopen("r_log", "a");
+    fprintf(logFp,"\nTeller: %d\n",data->tellerNo);
+    fprintf(logFp,"Customer: %d\n",customer->customerNo);
+    getTime(&hour,&min,&sec);
+    fprintf(logFp, "Arrival time: %02d:%02d:%02d\n",customer->arrivalHour, customer->arrivalMin ,customer->arrivalSec);
+    fprintf(logFp, "Response time: %02d:%02d:%02d\n", hour, min ,sec);
+    fflush(logFp);  // had to use fflush because they were logging their termination in random order so this helped to instantly push it to the file
+    fclose(logFp);
+
+}
