@@ -18,10 +18,10 @@
 
 int main(int argc, char *argv[]){
     int queueSize = atoi(argv[1]); // first argument in the commandline will be the queue size
-    int tc = atoi(argv[2]); // second command line argument will be time the customer takes to enter the queue
-    int tw = atoi(argv[3]); // third command line argument will be the time it takes for a teller to serve customers that are withdrawing
-    int td = atoi(argv[4]); // fourth command line argument will be the time it takes for a teller to serve customers that are depositing
-    int ti = atoi(argv[5]); // fifth command line argument will be the time it takes for a teller to serve customers that are wanting information
+    int customerTime = atoi(argv[2]); // second command line argument will be time the customer takes to enter the queue
+    int withdrawTime = atoi(argv[3]); // third command line argument will be the time it takes for a teller to serve customers that are withdrawing
+    int depositTime = atoi(argv[4]); // fourth command line argument will be the time it takes for a teller to serve customers that are depositing
+    int informationTime = atoi(argv[5]); // fifth command line argument will be the time it takes for a teller to serve customers that are wanting information
     int startHour, startMin, startSec; 
     if (argc != 6){
         printf("----------------------------\nError: To run enter ./main m tc tw td ti\nQueue Size (m)\nTime for customers to enter queue (tc)\nTime to withdraw (tw)\nTime to deposit(td)\nTime to get information(ti)\n----------------------------\n");
@@ -36,14 +36,14 @@ int main(int argc, char *argv[]){
         pthread_t teller4; //teller thread
         linkedlist * queue = createLinkedList(queueSize); //intialising fifo linked list / queue that ill be using to insert customers
         
-        customerArgs customerArguments = {queue,tc}; // parameters for my customer function used in a struct to pass to customer thread
+        customerArgs customerArguments = {queue,customerTime}; // parameters for my customer function used in a struct to pass to customer thread
 
         getTime(&startHour, &startMin, &startSec);//get the start time of the tellers
         // parameters for my teller function used in a struct to pass to teller thread
-        tellerArgs teller1Args = {queue, 1,startHour,startMin,startSec,tw,td,ti};
-        tellerArgs teller2Args = {queue, 2,startHour,startMin,startSec,tw,td,ti};
-        tellerArgs teller3Args = {queue, 3,startHour,startMin,startSec,tw,td,ti};
-        tellerArgs teller4Args = {queue, 4,startHour,startMin,startSec,tw,td,ti};
+        tellerArgs teller1Args = {queue, 1,startHour,startMin,startSec,withdrawTime,depositTime,informationTime};
+        tellerArgs teller2Args = {queue, 2,startHour,startMin,startSec,withdrawTime,depositTime,informationTime};
+        tellerArgs teller3Args = {queue, 3,startHour,startMin,startSec,withdrawTime,depositTime,informationTime};
+        tellerArgs teller4Args = {queue, 4,startHour,startMin,startSec,withdrawTime,depositTime,informationTime};
 
         pthread_mutex_init(&tellerMutex, NULL); // mutex initialised
         pthread_cond_init(&tellerCond, NULL); // condition initialised

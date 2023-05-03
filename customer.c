@@ -13,7 +13,6 @@
 #include "customer.h"
 
 
-
 void customer(void *arguments)
 {
     customerArgs *data = arguments;

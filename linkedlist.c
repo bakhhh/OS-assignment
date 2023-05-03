@@ -18,7 +18,7 @@ linkedlist * createLinkedList(int queueSize)//create linked list data structure 
     return list;
 }
 
-void insertLast(linkedlist *list, void * value) //adding it last makes sense because every node will be in order of arrival meaning the first one will be at the front of the queue
+void insertLast(linkedlist *list, void * value) //adding it to the end makes sense because every node will be in order of arrival meaning the first one will be at the front of the queue
 {
     node * newNode = (node*)malloc(sizeof(node));
     node * currNode = list->head;
@@ -53,15 +53,15 @@ void* deleteFirst(linkedlist *list) //fifo queue removes the first in so this is
     }
     else if(temp->next ==NULL) // if theres only one customer in the queue
     {
-        data = temp->value;
-        list->head = NULL;
+        data = temp->value; //set data to the node thats getting deleted so it can be returned
+        list->head = NULL; //set the head to null then free the memory allocated
         free(temp);
         temp = NULL;
     }
     else //if theres multiple customers in the queue
     {
-        data = temp->value;
-        list->head = list->head->next;
+        data = temp->value; //set data to the node thats getting deleted so it can be returned
+        list->head = list->head->next; //unlink the original head value and set the head to the next value thus deleting the original
         free(temp);
         temp = NULL;
     }

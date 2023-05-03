@@ -25,7 +25,7 @@ void teller(void *arguments){
 
     while(1)
     {
-        pthread_mutex_lock(&tellerMutex); //lock the threads in here 
+        pthread_mutex_lock(&tellerMutex); //use a lock to only allow 1 thread into the critical section
 
         while(data->queue->count ==0 && terminateTellers ==0) // if theres no customers in the queue and the tellers havent been told to terminate then the teller threads must wait
         {
@@ -50,7 +50,7 @@ void teller(void *arguments){
             {
                 log_completion_time(customer,data,data->informationTime);
             }
-            else if (strncmp(&customer->service, "W", 1) == 0)
+            else if (strncmp(&customer->service, "D", 1) == 0)
             {
                 log_completion_time(customer,data,data->depositTime);
             }

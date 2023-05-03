@@ -1,0 +1,9 @@
+Name: Sohail Bakhshi
+Unit: Operating Systems
+Student ID: 20605126
+-----------------------------
+Usage Information:
+-----------------------------
+
+To run the program you must compile it first by entering 'make' into the terminal which will create a file called main.
+Once compiled to run enter ./main m tc tw td ti where m is the queue size tc is the time for customers to enter the queue tw being withdraw time, td being deposit time and ti being information time.

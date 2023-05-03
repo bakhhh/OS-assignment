@@ -40,12 +40,12 @@ void customer_r_log(int customerNo, char serviceType, int hour, int min, int sec
     fprintf(logFp,"%d: %c\n",customerNo,serviceType);
     fprintf(logFp, "Arrival time: %02d:%02d:%02d\n", hour, min ,sec);
     fprintf(logFp,"-----------------------------------------------------------------------\n");
-    fflush(logFp);
+    fflush(logFp);  // this helped to instantly push it to the file
     fclose(logFp);
 
 }
 
-void log_completion_time(customerInfo * customer, tellerArgs * data,int time) // logs the tellers information into rlog
+void log_completion_time(customerInfo * customer, tellerArgs * data,int time) // logs the time it takes for the customer to be served by teller into rlog
 {
     int hour, min, sec;
     FILE *logFp = fopen("r_log", "a");
@@ -55,7 +55,7 @@ void log_completion_time(customerInfo * customer, tellerArgs * data,int time) //
     sleep(time);
     getTime(&hour,&min,&sec);
     fprintf(logFp,"Completion time: %02d:%02d:%02d\n", hour, min ,sec);
-    fflush(logFp);
+    fflush(logFp);  // this helped to instantly push it to the file
     fclose(logFp);
 }
 
@@ -72,7 +72,8 @@ void terminate_r_log(FILE *logFp,customerInfo * customer, tellerArgs * data,int 
 }
 
 
-void log_response_time(customerInfo* customer,tellerArgs* data){
+void log_response_time(customerInfo* customer,tellerArgs* data) // logs the tellers response time to the log file
+{
     int hour, min, sec;
     FILE *logFp = fopen("r_log", "a");
     fprintf(logFp,"\nTeller: %d\n",data->tellerNo);
@@ -80,7 +81,7 @@ void log_response_time(customerInfo* customer,tellerArgs* data){
     getTime(&hour,&min,&sec);
     fprintf(logFp, "Arrival time: %02d:%02d:%02d\n",customer->arrivalHour, customer->arrivalMin ,customer->arrivalSec);
     fprintf(logFp, "Response time: %02d:%02d:%02d\n", hour, min ,sec);
-    fflush(logFp);  // had to use fflush because they were logging their termination in random order so this helped to instantly push it to the file
+    fflush(logFp);  // this helped to instantly push it to the file
     fclose(logFp);
 
 }
